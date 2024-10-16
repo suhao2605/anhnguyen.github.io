@@ -1,3 +1,19 @@
+h1 {
+  text-align: center;
+  color: coral;
+  font-size: 70px;
+  font-family: tahoma;
+  font-weight: bold;
+  margin: 0 0 20px;
+  padding: 20px;
+  border-style: double;
+  border-color: coral;
+  border-radius: 30px;
+  
+}
 body {
-  background: lightgreen;
+  background-color: lightseagreen;
+}
+.cry {
+  text-align: center;
 }
