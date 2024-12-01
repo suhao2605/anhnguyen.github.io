@@ -1,19 +1,73 @@
-h1 {
-  text-align: center;
-  color: coral;
-  font-size: 70px;
-  font-family: tahoma;
-  font-weight: bold;
-  margin: 0 0 20px;
-  padding: 20px;
-  border-style: double;
-  border-color: coral;
-  border-radius: 30px;
-  
-}
+/* Đặt kiểu chữ mặc định */
 body {
-  background-color: lightseagreen;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #838383;
+    color: #333;
 }
-.cry {
-  text-align: center;
+
+/* Header */
+header {
+    background-color: #161616;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Container cho bản đồ */
+#map-container {
+    width: 100%;
+    height: 80vh;
+    background-color: #363638;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 5px solid #767777;
+    border-bottom: 5px solid #767777;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #161616;
+    color: white;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Hiệu ứng cho tỉnh khi hover (sẽ áp dụng trong script.js) */
+.province {
+    cursor: pointer;
+    transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.province:hover {
+    transform: scale(1.1);
+    fill: #ff5722 !important; /* Màu sáng hơn khi hover */
+}
+/* Căn chỉnh khu vực chứa bản đồ */
+#map-container {
+    position: relative;
+    width: 100%;
+    height: 80vh; /* Chiều cao bản đồ */
+    background-color: #303030; /* Màu nền */
+}
+
+/* Khu vực hiển thị bản đồ */
+#map {
+    width: 100%;
+    height: 100%;
 }
