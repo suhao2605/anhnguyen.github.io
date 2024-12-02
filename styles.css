@@ -1,69 +1,130 @@
+/* Thiết lập cơ bản cho toàn trang */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #838383;
-    color: #333;
-}
-header {
-    background-color: #161616;
-    color: white;
     text-align: center;
-    padding: 1em 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+     /* Thêm hình nền */
+     background-image: url('vn.jpg');
+     background-size: cover; /* Làm cho hình nền phủ toàn bộ */
+     background-position: center; /* Canh giữa hình nền */
+     background-attachment: fixed; /* Giữ cố định khi cuộn trang */
+     background-repeat: no-repeat; /* Không lặp hình ảnh */
+     
+     /* Thêm lớp phủ mờ */
+     position: relative;
 }
-
-header h1 {
-    margin: 0;
-    font-size: 2em;
-}
-
-#map-container {
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 80vh;
-    background-color: #363638;
+    height: 100%;
+    background-color: #000000d0; /* Lớp phủ trắng mờ (60%) */
+    z-index: -1;
+}
+
+
+header {
+    background-color: #ababab;
+    padding: 20px 0;
+    border-bottom: 2px solid #dc1a1a;
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: Verdana;
+    color: #1c1c1c;
+    margin: 0;
+}
+
+/* Định dạng cho các phần tử trong container */
+.container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border-top: 5px solid #767777;
-    border-bottom: 5px solid #767777;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+
+/* Định dạng cho từng vùng (North, Central, South) */
+.side {
+    display: inline-block;
+    margin: 20px;
+}
+
+/* Tạo container chứa hình ảnh và chữ */
+.image-text {
     position: relative;
-    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Hiệu ứng khi hover */
+}
+
+/* Định dạng cho ảnh */
+.image-text img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease; /* Làm mờ hình ảnh khi hover */
+}
+
+/* Định dạng cho chữ */
+.image-text a {
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    transition: color 0.3s ease; /* Hiệu ứng chuyển màu chữ khi hover */
+}
+
+/* Khi rê chuột vào container (cả ảnh và chữ) */
+.image-text:hover {
+    transform: scale(1.05); /* Phóng to nhẹ */
+    opacity: 0.9; /* Giảm độ sáng của container */
+}
+
+.image-text:hover img {
+    opacity: 0.7; /* Làm mờ hình ảnh */
+}
+
+.image-text:hover a {
+    color: white; /* Đổi màu chữ khi hover */
+}
+
+/* Khi click vào */
+.image-text:active {
+    transform: scale(0.98); /* Thu nhỏ nhẹ khi click */
+}
+
+/* Định dạng cho các liên kết trong menu */
+.header-nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.header-nav a:hover {
+    color: #ffb74d; /* Màu chữ khi hover */
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 1em 0;
-    background-color: #161616;
-    color: white;
-    font-size: 0.9em;
+    background-color: #ababab;
+    padding: 10px 0;
+    margin-top: 20px;
+    border-top: 2px solid #151515;
 }
 
 footer p {
     margin: 0;
-}
-
-/* Hiệu ứng cho tỉnh khi hover (sẽ áp dụng trong script.js) */
-.province {
-    cursor: pointer;
-    transition: transform 0.3s ease, fill 0.3s ease;
-}
-
-.province:hover {
-    transform: scale(1.1);
-    fill: #ff5722 !important; /* Màu sáng hơn khi hover */
-}
-/* Căn chỉnh khu vực chứa bản đồ */
-#map-container {
-    position: relative;
-    width: 100%;
-    height: 80vh; /* Chiều cao bản đồ */
-    background-color: #303030; /* Màu nền */
-}
-
-/* Khu vực hiển thị bản đồ */
-#map {
-    width: 100%;
-    height: 100%;
+    color: #1c1c1c;
+    font-family: Verdana;
+    font-size: 20px;
 }
