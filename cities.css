@@ -1,1 +1,299 @@
+/* Điều chỉnh hình ảnh */
+img {
+    max-width: 100%; /* Đảm bảo hình ảnh không vượt quá kích thước khung */
+    height: auto; /* Giữ tỷ lệ khung hình */
+}
 
+/* Cấu trúc cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Màu nền sáng */
+    margin: 0;
+    padding-top: 80px; /* Khoảng cách cho header */
+    padding-bottom: 50px; /* Khoảng cách cho footer */
+}
+
+/* Header */
+.header {
+    position: fixed; /* Cố định ở trên */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #003366; /* Xanh đậm */
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 1000;
+    box-shadow: 0 0 25px #ffcc00;
+}
+
+.header-link {
+    text-decoration: none; /* Loại bỏ gạch dưới */
+    color: inherit; /* Giữ nguyên màu chữ */
+    transition: color 0.3s ease;
+}
+
+.header-link:hover {
+    color: #ffcc00; /* Đổi màu chữ khi hover */
+}
+/* Footer */
+.footer-container {
+    position: fixed; /* Cố định ở dưới cùng */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0a3b6e;
+    box-shadow: 0 0 10px #ffcc00;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 16px;
+    z-index: 1000;
+}
+.footer-container p {
+    font-size: 15px;
+    font-weight: bolder;
+
+}
+
+/* Intro */
+.intro {
+    text-align: center;
+    margin-top: 4px; /* Khoảng cách từ header xuống intro */
+    padding: 20px 0;
+}
+
+.intro h2 {
+    font-size: 45px;
+    color: #0a3b6e;
+}
+
+.intro p {
+    font-size: 18px;
+}
+
+figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+figcaption {
+    font-size: 16px;
+    color: #000000;
+    margin-top: 8px;
+}
+
+/* Menu bên trái */
+.menu {
+    background-color: #f1f1d2;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px #007BFF;
+    border-radius: 15px;
+    position: fixed; /* Cố định khi cuộn */
+    top: 260px; /* Khoảng cách từ header */
+    left: 0;
+    width: 250px;
+    max-height: 90vh;
+    overflow-y: auto;
+    z-index: 10;
+}
+
+.menu ol {
+    list-style: none;
+    padding-left: 0;
+    counter-reset: section;
+}
+
+.menu ol > li {
+    counter-increment: section;
+    margin: 10px 0;
+}
+
+.menu ol > li:before {
+    content: counter(section) ". ";
+    font-weight: bold;
+    color: #007BFF;
+}
+
+.menu ol li ol {
+    list-style-type: none;
+    padding-left: 20px;
+    counter-reset: subsection;
+}
+
+.menu ol li ol > li {
+    counter-increment: subsection;
+    margin: 5px 0;
+}
+
+.menu ol li ol > li:before {
+    content: counter(section) "." counter(subsection) " ";
+}
+
+.menu ol li a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bolder;
+    color: #007BFF;
+    transition: color 0.3s ease;
+}
+
+.menu ol li a:hover {
+    color: #ff3c00;
+    text-decoration:double;
+}
+
+/* Menu bên phải */
+.menu-right {
+    background-color: #f1f1d2;
+    padding: 20px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #007BFF;
+    position: fixed;
+    top: 260px;
+    right: 0;
+    z-index: 10;
+}
+
+.menu-right h3 {
+    font-size: 19.5px;
+    color: #007BFF;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu-right ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.menu-right li {
+    font-size: 16.5px;
+    font-weight: bolder;
+    color: #007BFF;
+    padding: 8px 0;
+}
+
+.menu-right li a {
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.3s;
+}
+
+.menu-right li a:hover {
+    color: #ff3c00;
+    text-decoration:double;
+}
+
+/* Nội dung chính */
+.main {
+    margin-left: 270px; /* Khoảng cách với menu trái */
+    margin-right: 320px; /* Khoảng cách với menu phải */
+    padding: 15px;
+}
+
+/* Căn giữa hình ảnh trong phần nội dung chính */
+.main img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; /* Đảm bảo hình ảnh không vượt quá kích thước khung */
+    height: auto; /* Giữ tỷ lệ khung hình */
+}
+.main section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f1f1d2;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #007BFF;
+ 
+}
+
+.main section h3 {
+    font-size: 28px;
+    font-weight: bolder;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.main section h4 {
+    font-size: 20px;
+    color: #007BFF
+}
+
+.main section h5 {
+    font-size: 18px;
+    color: #0a3b6e
+}
+
+.main section p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .menu {
+        width: 200px; /* Điều chỉnh kích thước menu trái trên máy tính bảng */
+        top: 120px; /* Điều chỉnh vị trí menu trái trên màn hình nhỏ */
+    }
+
+    .menu-right {
+        width: 250px; /* Giảm kích thước menu bên phải trên máy tính bảng */
+        top: 120px; /* Điều chỉnh vị trí menu bên phải trên màn hình nhỏ */
+    }
+
+    .main {
+        margin-left: 220px; /* Điều chỉnh khoảng cách với menu trái */
+        margin-right: 270px; /* Điều chỉnh khoảng cách với menu phải */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        position: static;
+        width: 100%; /* Menu full width trên màn hình nhỏ */
+        border-right: none;
+        border-bottom: 2px solid #ddd;
+        top: auto; /* Xóa vị trí cố định khi thu nhỏ */
+    }
+
+    .menu-right {
+        display: none; /* Ẩn menu phải khi màn hình nhỏ */
+    }
+
+    .main {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 10px;
+    }
+
+    .header {
+        font-size: 22px; /* Giảm kích thước font cho header trên màn hình nhỏ */
+    }
+
+    .intro h2 {
+        font-size: 30px; /* Điều chỉnh kích thước tiêu đề trong intro */
+    }
+
+    .main section h3 {
+        font-size: 24px; /* Điều chỉnh kích thước tiêu đề trong main */
+    }
+
+    /* Điều chỉnh menu trái khi thu nhỏ */
+    .menu {
+        font-size: 16px; /* Giảm kích thước chữ cho menu trái */
+    }
+
+    .menu-right {
+        font-size: 16px; /* Giảm kích thước chữ cho menu phải */
+    }
+}
