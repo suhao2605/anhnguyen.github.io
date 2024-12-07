@@ -1,0 +1,120 @@
+/* Cấu trúc cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column; /* Bố cục từ trên xuống dưới */
+    text-align: center;
+    background-color: #f5f5f5; /* Màu nền sáng */
+    padding-top: 100px; /* Khoảng cách từ header xuống */
+    padding-bottom: 80px; /* Khoảng cách để không bị footer che */
+}
+
+/* Header */
+.header {
+    position: fixed; /* Cố định ở trên */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #003366; /* Xanh đậm */
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 1000;
+    box-shadow: 0 0 25px #ffcc00;
+}
+
+.header-link {
+    text-decoration: none; /* Loại bỏ gạch dưới */
+    color: inherit; /* Giữ nguyên màu chữ */
+    transition: color 0.3s ease;
+}
+
+.header-link:hover {
+    color: #ffcc00; /* Đổi màu chữ khi hover */
+}
+
+/* Tiêu đề */
+h2 {
+    margin: 20px 0; /* Khoảng cách trên/dưới */
+    font-size: 28px;
+    color: #003366;
+}
+
+/* Footer */
+.footer-container {
+    position: fixed; /* Cố định ở dưới */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    box-shadow: 0 0 15px #ffcc00;
+    z-index: 1000;
+}
+
+/* Container cho các hình ảnh */
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Đảm bảo các phần tử xuống dòng */
+    justify-content: space-around; /* Căn đều 2 bên */
+    gap: 20px; /* Khoảng cách giữa các thành phần */
+    margin-top: 20px; /* Khoảng cách từ tiêu đề */
+    padding: 20px;
+}
+
+/* Từng thành phố */
+.city {
+    flex: 0 0 calc(33.33% - 20px); /* Chiếm 1/3 hàng, trừ khoảng cách */
+    text-align: center;
+    margin-bottom: 40px;
+    background: #ffcc00;
+    border-radius: 10px;
+    box-shadow: 0 0px 7px #007BFF;
+    overflow: hidden; /* Bo góc ảnh */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.city:hover {
+    transform: translateY(-10px); /* Di chuyển lên trên khi hover */
+    box-shadow: 0 0 25px #ff6600;
+}
+
+/* Hình ảnh */
+.city img {
+    width: 100%; /* Chiếm toàn bộ chiều rộng container */
+    height: 200px; /* Chiều cao cố định */
+    object-fit: cover; /* Đảm bảo không méo hình */
+}
+
+/* Liên kết (chữ tên thành phố) */
+.city a {
+    display: block;
+    text-decoration: none; /* Không gạch dưới */
+    font-size: 20px;
+    font-weight: bold;
+    color: #003366;
+    padding: 15px 0;
+    background: #f1f1d2;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.city a:hover {
+    color: #ff6600; /* Đổi màu chữ khi hover */
+    background-color: #f0efef; /* Nền sáng hơn */
+}
+
+.city a:active {
+    color: #ff6600; /* Màu chữ khi click */
+}
