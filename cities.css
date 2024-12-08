@@ -1,10 +1,10 @@
-/* Điều chỉnh hình ảnh */
+
 img {
-    max-width: 100%; /* Đảm bảo hình ảnh không vượt quá kích thước khung */
-    height: auto; /* Giữ tỷ lệ khung hình */
+    max-width: 100%; 
+    height: auto; 
 }
 
-/* Cấu trúc cơ bản */
+
 * {
     margin: 0;
     padding: 0;
@@ -13,19 +13,18 @@ img {
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5; /* Màu nền sáng */
+    background-color: #f5f5f5; 
     margin: 0;
-    padding-top: 80px; /* Khoảng cách cho header */
-    padding-bottom: 50px; /* Khoảng cách cho footer */
+    padding-top: 80px; 
+    padding-bottom: 50px; 
 }
 
-/* Header */
 .header {
-    position: fixed; /* Cố định ở trên */
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #003366; /* Xanh đậm */
+    background-color: #003366; 
     color: #ffffff;
     text-align: center;
     padding: 15px 0;
@@ -36,17 +35,17 @@ body {
 }
 
 .header-link {
-    text-decoration: none; /* Loại bỏ gạch dưới */
-    color: inherit; /* Giữ nguyên màu chữ */
+    text-decoration: none;
+    color: inherit; 
     transition: color 0.3s ease;
 }
 
 .header-link:hover {
-    color: #ffcc00; /* Đổi màu chữ khi hover */
+    color: #ffcc00; 
 }
-/* Footer */
+
 .footer-container {
-    position: fixed; /* Cố định ở dưới cùng */
+    position: fixed; 
     bottom: 0;
     left: 0;
     width: 100%;
@@ -64,10 +63,10 @@ body {
 
 }
 
-/* Intro */
+
 .intro {
     text-align: center;
-    margin-top: 4px; /* Khoảng cách từ header xuống intro */
+    margin-top: 4px; 
     padding: 20px 0;
 }
 
@@ -91,14 +90,14 @@ figcaption {
     margin-top: 8px;
 }
 
-/* Menu bên trái */
+
 .menu {
     background-color: #f1f1d2;
     padding: 10px 20px;
     box-shadow: 0 0 10px #007BFF;
     border-radius: 15px;
-    position: fixed; /* Cố định khi cuộn */
-    top: 260px; /* Khoảng cách từ header */
+    position: fixed; 
+    top: 260px; 
     left: 0;
     width: 250px;
     max-height: 90vh;
@@ -151,7 +150,7 @@ figcaption {
     text-decoration:double;
 }
 
-/* Menu bên phải */
+
 .menu-right {
     background-color: #f1f1d2;
     padding: 20px;
@@ -194,19 +193,18 @@ figcaption {
     text-decoration:double;
 }
 
-/* Nội dung chính */
 .main {
-    margin-left: 270px; /* Khoảng cách với menu trái */
-    margin-right: 320px; /* Khoảng cách với menu phải */
+    margin-left: 270px; 
+    margin-right: 320px; 
     padding: 15px;
 }
 
-/* Căn giữa hình ảnh trong phần nội dung chính */
+
 .main img {
     display: block;
     margin: 0 auto;
-    max-width: 100%; /* Đảm bảo hình ảnh không vượt quá kích thước khung */
-    height: auto; /* Giữ tỷ lệ khung hình */
+    max-width: 100%; 
+    height: auto; 
 }
 .main section {
     margin-top: 20px;
@@ -239,35 +237,35 @@ figcaption {
     color: #333;
 }
 
-/* Responsive Design */
+
 @media screen and (max-width: 1024px) {
     .menu {
-        width: 200px; /* Điều chỉnh kích thước menu trái trên máy tính bảng */
-        top: 120px; /* Điều chỉnh vị trí menu trái trên màn hình nhỏ */
+        width: 200px; 
+        top: 120px; 
     }
 
     .menu-right {
-        width: 250px; /* Giảm kích thước menu bên phải trên máy tính bảng */
-        top: 120px; /* Điều chỉnh vị trí menu bên phải trên màn hình nhỏ */
+        width: 250px; 
+        top: 120px; 
     }
 
     .main {
-        margin-left: 220px; /* Điều chỉnh khoảng cách với menu trái */
-        margin-right: 270px; /* Điều chỉnh khoảng cách với menu phải */
+        margin-left: 220px; 
+        margin-right: 270px; 
     }
 }
 
 @media screen and (max-width: 768px) {
     .menu {
         position: static;
-        width: 100%; /* Menu full width trên màn hình nhỏ */
+        width: 100%; 
         border-right: none;
         border-bottom: 2px solid #ddd;
-        top: auto; /* Xóa vị trí cố định khi thu nhỏ */
+        top: auto; 
     }
 
     .menu-right {
-        display: none; /* Ẩn menu phải khi màn hình nhỏ */
+        display: none; 
     }
 
     .main {
@@ -277,23 +275,23 @@ figcaption {
     }
 
     .header {
-        font-size: 22px; /* Giảm kích thước font cho header trên màn hình nhỏ */
+        font-size: 22px; 
     }
 
     .intro h2 {
-        font-size: 30px; /* Điều chỉnh kích thước tiêu đề trong intro */
+        font-size: 30px; 
     }
 
     .main section h3 {
-        font-size: 24px; /* Điều chỉnh kích thước tiêu đề trong main */
+        font-size: 24px; 
     }
 
-    /* Điều chỉnh menu trái khi thu nhỏ */
+    
     .menu {
-        font-size: 16px; /* Giảm kích thước chữ cho menu trái */
+        font-size: 16px; 
     }
 
     .menu-right {
-        font-size: 16px; /* Giảm kích thước chữ cho menu phải */
+        font-size: 16px; 
     }
 }
