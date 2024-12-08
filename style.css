@@ -1,10 +1,10 @@
-/* Điều chỉnh hình ảnh */
+
 img {
-    max-width: 100%; /* Đảm bảo hình ảnh không vượt quá kích thước khung */
-    height: auto; /* Giữ tỷ lệ khung hình */
+    max-width: 100%;
+    height: auto;
 }
 
-/* Cấu trúc cơ bản */
+
 * {
     margin: 0;
     padding: 0;
@@ -15,23 +15,23 @@ body {
     font-family: Arial, sans-serif;
     font-weight: bolder;
     display: flex;
-    flex-direction: column; /* Bố cục từ trên xuống dưới */
+    flex-direction: column; 
     margin: 0;
     padding: 0;
     text-align: center;
     background-color: #dfdfdf;
-    padding-top: 80px; /* Khoảng cách từ header xuống */
-    padding-bottom: 60px; /* Tạo khoảng cách dưới cùng cho body để không bị footer che */
+    padding-top: 80px; 
+    padding-bottom: 60px; 
 
 }
 
-/* Header */
+
 .header {
-    position: fixed; /* Cố định ở trên */
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #003366; /* Xanh đậm */
+    background-color: #003366;
     color: #ffffff;
     text-align: center;
     padding: 15px 0;
@@ -42,18 +42,18 @@ body {
 }
 
 .header-link {
-    text-decoration: none; /* Loại bỏ gạch dưới */
-    color: inherit; /* Giữ nguyên màu chữ */
+    text-decoration: none; 
+    color: inherit; 
     transition: color 0.3s ease;
 }
 
 .header-link:hover {
-    color: #ffcc00; /* Đổi màu chữ khi hover */
+    color: #ffcc00; 
 }
 
-/* Footer */
+
 .footer-container {
-    position: fixed; /* Cố định ở dưới cùng */
+    position: fixed; 
     bottom: 0;
     left: 0;
     width: 100%;
@@ -72,13 +72,13 @@ body {
 }
 
 
-/* Định dạng cho từng vùng (North, Central, South) */
+
 .side {
     display: inline-block;
     margin: 20px;
 }
 
-/* Tạo container chứa hình ảnh và chữ */
+
 .image-text {
     position: relative;
     text-align: center;
@@ -86,52 +86,51 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Hiệu ứng khi hover */
-    margin-top: 40px; /* Điều chỉnh khoảng cách giữa ảnh và header */
+    transition: transform 0.3s ease, opacity 0.3s ease; 
+    margin-top: 40px; 
 
 }
 
-/* Định dạng cho ảnh */
+
 .image-text img {
     max-width: 100%;
-    margin-top: 40px; /* Tăng khoảng cách trên của ảnh */
+    margin-top: 40px; 
     padding: 10px;
     border-radius: 40px;
     box-shadow: 0 0 15px #ffcc00;
     height: auto;
     display: block;
-    transition: opacity 0.3s ease; /* Làm mờ hình ảnh khi hover */
+    transition: opacity 0.3s ease; 
 }
 
-/* Định dạng cho chữ */
+
 .image-text a {
     margin-top: 10px;
     text-decoration: none;
     font-size: 30px;
     font-weight: bolder;
     color: #0a3b6e;
-    transition: color 0.3s ease; /* Hiệu ứng chuyển màu chữ khi hover */
+    transition: color 0.3s ease; 
 }
 
-/* Khi rê chuột vào container (cả ảnh và chữ) */
 .image-text:hover {
-    transform: scale(1.1); /* Phóng to nhẹ */
+    transform: scale(1.1); 
 }
 
 .image-text:hover img {
-    opacity: 1.5; /* Làm mờ hình ảnh */
+    opacity: 1.5; 
     box-shadow: 0 0 25px #ff3c00;
 }
 
 .image-text:hover a {
-    color: #ff3c00; /* Đổi màu chữ khi hover */
+    color: #ff3c00; 
     font-size: 40px;
     text-decoration: wavy;
 }
 
-/* Khi click vào */
+
 .image-text:active {
-    transform: scale(1.5); /* Thu nhỏ nhẹ khi click */
+    transform: scale(1.5); 
     color:aqua;
 }
 
