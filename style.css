@@ -71,16 +71,21 @@ body {
 
 }
 
+
 .container {
     display: flex; 
     flex-wrap: wrap; 
-    justify-content: center; 
+    justify-content: center;
     gap: 20px; 
-    max-width: 90%;
+    max-width: 90%; 
     margin: 0 auto; 
 }
 
+
 .side {
+    flex: 1 1 30%;
+    max-width: 30%; 
+    text-align: center;
     display: inline-block;
     margin: 20px;
 }
