@@ -58,7 +58,7 @@ body {
     z-index: 1000;
 }
 .footer-container p {
-    font-size: 15px;
+    font-size: 25px;
     font-weight: bolder;
 
 }
@@ -71,7 +71,7 @@ body {
 }
 
 .intro h2 {
-    font-size: 45px;
+    font-size: 50px;
     color: #0a3b6e;
 }
 
@@ -85,7 +85,7 @@ figure {
 }
 
 figcaption {
-    font-size: 16px;
+    font-size: 20px;
     color: #000000;
     margin-top: 8px;
 }
@@ -139,7 +139,7 @@ figcaption {
 
 .menu ol li a {
     text-decoration: none;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: bolder;
     color: #007BFF;
     transition: color 0.3s ease;
@@ -164,7 +164,7 @@ figcaption {
 }
 
 .menu-right h3 {
-    font-size: 19.5px;
+    font-size: 21px;
     color: #007BFF;
     text-align: center;
     margin-bottom: 20px;
@@ -176,7 +176,7 @@ figcaption {
 }
 
 .menu-right li {
-    font-size: 16.5px;
+    font-size: 18px;
     font-weight: bolder;
     color: #007BFF;
     padding: 8px 0;
@@ -228,19 +228,19 @@ figcaption {
 }
 
 .main section h3 {
-    font-size: 28px;
+    font-size: 32px;
     font-weight: bolder;
     color: #007BFF;
     margin-bottom: 10px;
 }
 
 .main section h4 {
-    font-size: 20px;
+    font-size: 24px;
     color: #007BFF
 }
 
 .main section h5 {
-    font-size: 18px;
+    font-size: 22px;
     color: #0a3b6e
 }
 
