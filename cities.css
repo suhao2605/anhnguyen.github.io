@@ -197,6 +197,14 @@ figcaption {
     text-align: center; 
     margin: 20px 0; 
 }
+
+.image-caption img {
+    width: 65%; 
+    height: auto; 
+    max-width: 200x; 
+    max-height: 450px; 
+    object-fit: cover; 
+}
 .main {
     margin-left: 270px; 
     margin-right: 320px; 
