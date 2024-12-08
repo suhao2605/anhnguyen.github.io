@@ -71,11 +71,23 @@ body {
 
 }
 
+.container {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+    max-width: 90%;
+    margin: 0 auto; 
+}
+
+/* Mỗi phần tử .side */
 .side {
+    flex: 1 1 30%; /* Mỗi hình chiếm 30% chiều rộng container */
+    max-width: 30%; /* Giới hạn chiều rộng của từng hình */
+    text-align: center; /* Canh giữa chữ và hình */
     display: inline-block;
     margin: 20px;
 }
-
 
 .image-text {
     position: relative;
