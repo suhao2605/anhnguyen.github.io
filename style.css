@@ -1,7 +1,7 @@
 
 img {
-    max-width: 100%;
-    height: auto;
+    max-width: 100%; 
+    height: auto; 
 }
 
 
@@ -21,7 +21,7 @@ body {
     text-align: center;
     background-color: #dfdfdf;
     padding-top: 80px; 
-    padding-bottom: 60px; 
+    padding-bottom: 60px;
 
 }
 
@@ -31,7 +31,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #003366;
+    background-color: #003366; 
     color: #ffffff;
     text-align: center;
     padding: 15px 0;
@@ -75,17 +75,16 @@ body {
 .container {
     display: flex; 
     flex-wrap: wrap; 
-    justify-content: center;
+    justify-content: center; 
     gap: 20px; 
     max-width: 90%; 
     margin: 0 auto; 
 }
 
-
 .side {
-    flex: 1 1 30%;
-    max-width: 30%; 
-    text-align: center;
+    flex: 1 1 30%; 
+    max-width: 30%;
+    text-align: center; 
     display: inline-block;
     margin: 20px;
 }
@@ -102,10 +101,8 @@ body {
 
 }
 
-
 .image-text img {
-    max-width: 80%;
-    height: auto;
+    max-width: 100%;
     margin-top: 40px; 
     padding: 10px;
     border-radius: 40px;
@@ -114,7 +111,6 @@ body {
     display: block;
     transition: opacity 0.3s ease; 
 }
-
 
 .image-text a {
     margin-top: 10px;
