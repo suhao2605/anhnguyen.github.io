@@ -246,6 +246,7 @@ figcaption {
 }
 
 .main section p {
+    margin: 16px;
     font-size: 16px;
     color: #333;
 }
