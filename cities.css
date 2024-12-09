@@ -155,6 +155,7 @@ figcaption {
     background-color: #f1f1d2;
     padding: 20px;
     width: 300px;
+    max-height: auto;
     border-radius: 15px;
     box-shadow: 0 0 10px #007BFF;
     position: fixed;
