@@ -199,10 +199,10 @@ figcaption {
 }
 
 .image-caption img {
-    width: 65%; 
+    width: 60%; 
     height: auto; 
-    max-width: 200x; 
-    max-height: 450px; 
+    max-width: 300x; 
+    max-height: 500px; 
     object-fit: cover; 
 }
 .main {
